@@ -2,9 +2,9 @@ var Benchmark = require('benchmark'),
     benchmarks = require('beautify-benchmark'),
     lib = require('../index'),
     uriRegex = lib.createUriRegex(),
-    uriRegexCustomScheme = lib.createUriRegex({scheme: 'http'}),
-    uriRegexCustomArrayScheme = lib.createUriRegex({scheme: ['http', 'https']}),
-    uriRegexCustomRegexScheme = lib.createUriRegex({scheme: /https?/}),
+    uriRegexImproved = lib.createUriRegexImproved(),
+    uriRegexCustomScheme = lib.createUriRegex('https?'),
+    uriRegexCustomSchemeImproved = lib.createUriRegexImproved('https?'),
     suite,
     testUris = [
         'http://mail.google.com/',
@@ -22,30 +22,47 @@ var Benchmark = require('benchmark'),
     ];
 
 testUris.forEach(function (testUri) {
+    process.stdout.write('  Testing URI "' + testUri + '"\n\n');
+
     suite = new Benchmark.Suite;
     benchmarks.reset();
-
-    process.stdout.write('  Testing URI "' + testUri + '"\n\n');
 
     suite.add({
         name: 'createUriRegex()#test(uri)',
         fn: function () {
-            uriRegex.test(testUri);
+            if (!uriRegex.test(testUri)) {
+                throw new Error('Should have been true');
+            }
         }
     }).add({
-        name: 'createUriRegex({ scheme: \'http\' })#test(uri)',
+        name: 'createUriRegexImproved()#test(uri)',
         fn: function () {
-            uriRegexCustomScheme.test(testUri);
+            if (!uriRegexImproved.test(testUri)) {
+                throw new Error('Should have been true');
+            }
+        }
+    }).on('cycle', function onCycle(event) {
+        benchmarks.add(event.target);
+    }).on('complete', function onComplete() {
+        benchmarks.log();
+    }).run();
+
+    suite = new Benchmark.Suite;
+    benchmarks.reset();
+
+    suite.add({
+        name: 'createUriRegex(\'https?\')#test(uri)',
+        fn: function () {
+            if (!uriRegexCustomScheme.test(testUri)) {
+                throw new Error('Should have been true');
+            }
         }
     }).add({
-        name: 'createUriRegex({ scheme: [\'http\', \'https\'] })#test(uri)',
+        name: 'createUriRegexImproved(\'https?\')#test(uri)',
         fn: function () {
-            uriRegexCustomArrayScheme.test(testUri);
-        }
-    }).add({
-        name: 'createUriRegex({ scheme: /https?/ })#test(uri)',
-        fn: function () {
-            uriRegexCustomRegexScheme.test(testUri);
+            if (!uriRegexCustomSchemeImproved.test(testUri)) {
+                throw new Error('Should have been true');
+            }
         }
     }).on('cycle', function onCycle(event) {
         benchmarks.add(event.target);
