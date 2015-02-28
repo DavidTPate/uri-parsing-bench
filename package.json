@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/DavidTPate/uri-parsing-bench",
   "dependencies": {
-    "benchmark": "^1.0.0"
+    "beautify-benchmark": "^0.x",
+    "benchmark": "^1.x"
   },
   "devDependencies": {},
   "scripts": {
