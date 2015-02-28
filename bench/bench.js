@@ -42,13 +42,6 @@ var Benchmark = require('benchmark'),
         'http://asdf:qw%20er@[v1.09azAZ-._~!$&\'()*+,;=:]:8000/',
         'http://asdf:qw%20er@[v1.09azAZ-._~!$&\'()*+,;=:]:8000/path/one/two/three/four',
         'http://asdf:qw%20er@[v1.09azAZ-._~!$&\'()*+,;=:]:8000/path/one/two/three/four?asdf=12345&asda=fc%2F',
-        'http://asdf:qw%20er@[v1.09azAZ-._~!$&\'()*+,;=:]:8000/path/one/two/three/four?asdf=12345&asda=fc%2F#bacon',
-        'http://[v1.09azAZ-._~!$&\'()*+,;=:]/',
-        'http://asdf:qw%20er@[v1.09azAZ-._~!$&\'()*+,;=:]',
-        'http://asdf:qw%20er@[v1.09azAZ-._~!$&\'()*+,;=:]:8000',
-        'http://asdf:qw%20er@[v1.09azAZ-._~!$&\'()*+,;=:]:8000/',
-        'http://asdf:qw%20er@[v1.09azAZ-._~!$&\'()*+,;=:]:8000/path/one/two/three/four',
-        'http://asdf:qw%20er@[v1.09azAZ-._~!$&\'()*+,;=:]:8000/path/one/two/three/four?asdf=12345&asda=fc%2F',
         'http://asdf:qw%20er@[v1.09azAZ-._~!$&\'()*+,;=:]:8000/path/one/two/three/four?asdf=12345&asda=fc%2F#bacon'
     ];
 
