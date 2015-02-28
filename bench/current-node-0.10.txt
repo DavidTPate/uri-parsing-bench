@@ -1,0 +1,216 @@
+Testing URI "http://google.com"
+4 tests completed.
+createUriRegex()#test(uri)                              x 1,828,529 ops/sec ±0.69% (96 runs sampled)
+createUriRegex({ scheme: 'http' })#test(uri)            x 4,705,218 ops/sec ±3.67% (81 runs sampled)
+createUriRegex({ scheme: ['http', 'https'] })#test(uri) x 3,832,146 ops/sec ±1.50% (95 runs sampled)
+createUriRegex({ scheme: /https?/ })#test(uri)          x 3,767,029 ops/sec ±1.18% (91 runs sampled)
+Testing URI "http://mail.google.com/"
+4 tests completed.
+createUriRegex()#test(uri)                              x 1,712,304 ops/sec ±0.88% (92 runs sampled)
+createUriRegex({ scheme: 'http' })#test(uri)            x 4,368,041 ops/sec ±2.81% (72 runs sampled)
+createUriRegex({ scheme: ['http', 'https'] })#test(uri) x 3,742,951 ops/sec ±1.41% (86 runs sampled)
+createUriRegex({ scheme: /https?/ })#test(uri)          x 3,766,052 ops/sec ±0.38% (101 runs sampled)
+Testing URI "http://asdf:qw%20er@mail.google.com"
+4 tests completed.
+createUriRegex()#test(uri)                              x 1,815,491 ops/sec ±0.65% (90 runs sampled)
+createUriRegex({ scheme: 'http' })#test(uri)            x 3,831,322 ops/sec ±1.06% (68 runs sampled)
+createUriRegex({ scheme: ['http', 'https'] })#test(uri) x 3,473,661 ops/sec ±0.67% (96 runs sampled)
+createUriRegex({ scheme: /https?/ })#test(uri)          x 3,682,987 ops/sec ±0.39% (97 runs sampled)
+Testing URI "http://asdf:qw%20er@mail.google.com:8000"
+4 tests completed.
+createUriRegex()#test(uri)                              x 1,776,516 ops/sec ±0.79% (95 runs sampled)
+createUriRegex({ scheme: 'http' })#test(uri)            x 5,891,904 ops/sec ±0.39% (98 runs sampled)
+createUriRegex({ scheme: ['http', 'https'] })#test(uri) x 3,985,171 ops/sec ±4.34% (71 runs sampled)
+createUriRegex({ scheme: /https?/ })#test(uri)          x 3,809,496 ops/sec ±0.55% (92 runs sampled)
+Testing URI "http://asdf:qw%20er@mail.google.com:8000/"
+4 tests completed.
+createUriRegex()#test(uri)                              x 1,819,339 ops/sec ±0.71% (93 runs sampled)
+createUriRegex({ scheme: 'http' })#test(uri)            x 4,191,020 ops/sec ±3.82% (66 runs sampled)
+createUriRegex({ scheme: ['http', 'https'] })#test(uri) x 3,477,542 ops/sec ±0.45% (95 runs sampled)
+createUriRegex({ scheme: /https?/ })#test(uri)          x 3,720,041 ops/sec ±1.08% (88 runs sampled)
+Testing URI "http://asdf:qw%20er@mail.google.com:8000/path/one/two/three/four"
+4 tests completed.
+createUriRegex()#test(uri)                              x 1,530,653 ops/sec ±1.24% (88 runs sampled)
+createUriRegex({ scheme: 'http' })#test(uri)            x 6,209,313 ops/sec ±1.30% (89 runs sampled)
+createUriRegex({ scheme: ['http', 'https'] })#test(uri) x 6,045,506 ops/sec ±2.23% (90 runs sampled)
+createUriRegex({ scheme: /https?/ })#test(uri)          x 4,044,028 ops/sec ±0.53% (93 runs sampled)
+Testing URI "http://asdf:qw%20er@mail.google.com:8000/path/one/two/three/four?asdf=12345&asda=fc%2F"
+4 tests completed.
+createUriRegex()#test(uri)                              x 1,509,765 ops/sec ±1.16% (92 runs sampled)
+createUriRegex({ scheme: 'http' })#test(uri)            x 5,647,871 ops/sec ±3.89% (84 runs sampled)
+createUriRegex({ scheme: ['http', 'https'] })#test(uri) x 4,454,868 ops/sec ±1.24% (94 runs sampled)
+createUriRegex({ scheme: /https?/ })#test(uri)          x 4,155,697 ops/sec ±0.40% (94 runs sampled)
+Testing URI "http://asdf:qw%20er@mail.google.com:8000/path/one/two/three/four?asdf=12345&asda=fc%2F#bacon"
+4 tests completed.
+createUriRegex()#test(uri)                              x 1,517,373 ops/sec ±0.89% (94 runs sampled)
+createUriRegex({ scheme: 'http' })#test(uri)            x 6,004,240 ops/sec ±1.14% (92 runs sampled)
+createUriRegex({ scheme: ['http', 'https'] })#test(uri) x 6,050,239 ops/sec ±1.42% (90 runs sampled)
+createUriRegex({ scheme: /https?/ })#test(uri)          x 4,532,242 ops/sec ±3.66% (72 runs sampled)
+Testing URI "http://127.0.0.1/"
+4 tests completed.
+createUriRegex()#test(uri)                              x 1,941,538 ops/sec ±0.70% (95 runs sampled)
+createUriRegex({ scheme: 'http' })#test(uri)            x 6,028,989 ops/sec ±1.07% (90 runs sampled)
+createUriRegex({ scheme: ['http', 'https'] })#test(uri) x 4,681,726 ops/sec ±3.36% (69 runs sampled)
+createUriRegex({ scheme: /https?/ })#test(uri)          x 4,276,628 ops/sec ±1.13% (91 runs sampled)
+Testing URI "http://asdf:qw%20er@127.0.0.1"
+4 tests completed.
+createUriRegex()#test(uri)                              x 2,036,394 ops/sec ±0.99% (90 runs sampled)
+createUriRegex({ scheme: 'http' })#test(uri)            x 4,848,518 ops/sec ±2.89% (70 runs sampled)
+createUriRegex({ scheme: ['http', 'https'] })#test(uri) x 4,662,896 ops/sec ±0.64% (94 runs sampled)
+createUriRegex({ scheme: /https?/ })#test(uri)          x 4,432,642 ops/sec ±1.03% (93 runs sampled)
+Testing URI "http://asdf:qw%20er@127.0.0.1:8000"
+4 tests completed.
+createUriRegex()#test(uri)                              x 1,804,297 ops/sec ±0.83% (91 runs sampled)
+createUriRegex({ scheme: 'http' })#test(uri)            x 6,390,079 ops/sec ±1.03% (92 runs sampled)
+createUriRegex({ scheme: ['http', 'https'] })#test(uri) x 5,825,475 ops/sec ±4.31% (88 runs sampled)
+createUriRegex({ scheme: /https?/ })#test(uri)          x 4,423,907 ops/sec ±1.02% (93 runs sampled)
+Testing URI "http://asdf:qw%20er@127.0.0.1:8000/"
+4 tests completed.
+createUriRegex()#test(uri)                              x 2,063,911 ops/sec ±0.62% (100 runs sampled)
+createUriRegex({ scheme: 'http' })#test(uri)            x 5,530,839 ops/sec ±3.95% (83 runs sampled)
+createUriRegex({ scheme: ['http', 'https'] })#test(uri) x 4,460,642 ops/sec ±0.92% (94 runs sampled)
+createUriRegex({ scheme: /https?/ })#test(uri)          x 4,504,843 ops/sec ±0.95% (95 runs sampled)
+Testing URI "http://asdf:qw%20er@127.0.0.1:8000/path/one/two/three/four"
+4 tests completed.
+createUriRegex()#test(uri)                              x 1,745,656 ops/sec ±1.82% (95 runs sampled)
+createUriRegex({ scheme: 'http' })#test(uri)            x 6,669,788 ops/sec ±0.74% (97 runs sampled)
+createUriRegex({ scheme: ['http', 'https'] })#test(uri) x 5,954,387 ops/sec ±3.49% (90 runs sampled)
+createUriRegex({ scheme: /https?/ })#test(uri)          x 4,102,105 ops/sec ±2.42% (85 runs sampled)
+Testing URI "http://asdf:qw%20er@127.0.0.1:8000/path/one/two/three/four?asdf=12345&asda=fc%2F"
+4 tests completed.
+createUriRegex()#test(uri)                              x 1,601,124 ops/sec ±1.35% (95 runs sampled)
+createUriRegex({ scheme: 'http' })#test(uri)            x 6,003,601 ops/sec ±3.91% (85 runs sampled)
+createUriRegex({ scheme: ['http', 'https'] })#test(uri) x 4,463,833 ops/sec ±1.12% (94 runs sampled)
+createUriRegex({ scheme: /https?/ })#test(uri)          x 4,153,697 ops/sec ±0.65% (94 runs sampled)
+Testing URI "http://asdf:qw%20er@127.0.0.1:8000/path/one/two/three/four?asdf=12345&asda=fc%2F#bacon"
+4 tests completed.
+createUriRegex()#test(uri)                              x 1,538,857 ops/sec ±1.04% (94 runs sampled)
+createUriRegex({ scheme: 'http' })#test(uri)            x 5,793,259 ops/sec ±0.81% (88 runs sampled)
+createUriRegex({ scheme: ['http', 'https'] })#test(uri) x 5,918,490 ops/sec ±0.92% (88 runs sampled)
+createUriRegex({ scheme: /https?/ })#test(uri)          x 4,674,270 ops/sec ±3.16% (71 runs sampled)
+Testing URI "http://[FEDC:BA98:7654:3210:FEDC:BA98:7654:3210]/"
+4 tests completed.
+createUriRegex()#test(uri)                              x 1,909,376 ops/sec ±0.62% (94 runs sampled)
+createUriRegex({ scheme: 'http' })#test(uri)            x 5,849,069 ops/sec ±0.75% (94 runs sampled)
+createUriRegex({ scheme: ['http', 'https'] })#test(uri) x 4,301,061 ops/sec ±2.40% (73 runs sampled)
+createUriRegex({ scheme: /https?/ })#test(uri)          x 4,016,660 ops/sec ±0.26% (102 runs sampled)
+Testing URI "http://asdf:qw%20er@[FEDC:BA98:7654:3210:FEDC:BA98:7654:3210]"
+4 tests completed.
+createUriRegex()#test(uri)                              x 1,796,080 ops/sec ±0.28% (100 runs sampled)
+createUriRegex({ scheme: 'http' })#test(uri)            x 4,596,234 ops/sec ±3.19% (78 runs sampled)
+createUriRegex({ scheme: ['http', 'https'] })#test(uri) x 4,306,325 ops/sec ±0.89% (91 runs sampled)
+createUriRegex({ scheme: /https?/ })#test(uri)          x 4,488,631 ops/sec ±0.43% (94 runs sampled)
+Testing URI "http://asdf:qw%20er@[FEDC:BA98:7654:3210:FEDC:BA98:7654:3210]:8000"
+4 tests completed.
+createUriRegex()#test(uri)                              x 1,984,180 ops/sec ±0.45% (101 runs sampled)
+createUriRegex({ scheme: 'http' })#test(uri)            x 5,968,899 ops/sec ±1.10% (89 runs sampled)
+createUriRegex({ scheme: ['http', 'https'] })#test(uri) x 5,090,908 ops/sec ±4.34% (77 runs sampled)
+createUriRegex({ scheme: /https?/ })#test(uri)          x 4,278,000 ops/sec ±0.65% (94 runs sampled)
+Testing URI "http://asdf:qw%20er@[FEDC:BA98:7654:3210:FEDC:BA98:7654:3210]:8000/"
+4 tests completed.
+createUriRegex()#test(uri)                              x 1,889,698 ops/sec ±0.43% (99 runs sampled)
+createUriRegex({ scheme: 'http' })#test(uri)            x 5,067,258 ops/sec ±3.64% (75 runs sampled)
+createUriRegex({ scheme: ['http', 'https'] })#test(uri) x 4,390,541 ops/sec ±0.76% (96 runs sampled)
+createUriRegex({ scheme: /https?/ })#test(uri)          x 4,536,415 ops/sec ±0.61% (97 runs sampled)
+Testing URI "http://asdf:qw%20er@[FEDC:BA98:7654:3210:FEDC:BA98:7654:3210]:8000/path/one/two/three/four"
+4 tests completed.
+createUriRegex()#test(uri)                              x 1,733,894 ops/sec ±0.73% (95 runs sampled)
+createUriRegex({ scheme: 'http' })#test(uri)            x 6,603,166 ops/sec ±0.72% (92 runs sampled)
+createUriRegex({ scheme: ['http', 'https'] })#test(uri) x 6,079,425 ops/sec ±3.22% (86 runs sampled)
+createUriRegex({ scheme: /https?/ })#test(uri)          x 4,478,661 ops/sec ±0.36% (99 runs sampled)
+Testing URI "http://asdf:qw%20er@[FEDC:BA98:7654:3210:FEDC:BA98:7654:3210]:8000/path/one/two/three/four?asdf=12345&asda=fc%2F"
+4 tests completed.
+createUriRegex()#test(uri)                              x 1,658,154 ops/sec ±0.40% (97 runs sampled)
+createUriRegex({ scheme: 'http' })#test(uri)            x 5,520,988 ops/sec ±4.55% (82 runs sampled)
+createUriRegex({ scheme: ['http', 'https'] })#test(uri) x 4,565,729 ops/sec ±0.55% (99 runs sampled)
+createUriRegex({ scheme: /https?/ })#test(uri)          x 4,588,602 ops/sec ±0.50% (99 runs sampled)
+Testing URI "http://asdf:qw%20er@[FEDC:BA98:7654:3210:FEDC:BA98:7654:3210]:8000/path/one/two/three/four?asdf=12345&asda=fc%2F#bacon"
+4 tests completed.
+createUriRegex()#test(uri)                              x 1,559,133 ops/sec ±0.75% (98 runs sampled)
+createUriRegex({ scheme: 'http' })#test(uri)            x 6,743,567 ops/sec ±0.68% (98 runs sampled)
+createUriRegex({ scheme: ['http', 'https'] })#test(uri) x 6,115,351 ops/sec ±3.45% (88 runs sampled)
+createUriRegex({ scheme: /https?/ })#test(uri)          x 4,541,452 ops/sec ±0.55% (98 runs sampled)
+Testing URI "http://[a:b:c:d:e::1.2.3.4]/"
+4 tests completed.
+createUriRegex()#test(uri)                              x 1,448,696 ops/sec ±0.31% (98 runs sampled)
+createUriRegex({ scheme: 'http' })#test(uri)            x 5,368,392 ops/sec ±3.77% (80 runs sampled)
+createUriRegex({ scheme: ['http', 'https'] })#test(uri) x 4,420,666 ops/sec ±0.38% (98 runs sampled)
+createUriRegex({ scheme: /https?/ })#test(uri)          x 4,460,468 ops/sec ±0.61% (95 runs sampled)
+Testing URI "http://asdf:qw%20er@[a:b:c:d:e::1.2.3.4]"
+4 tests completed.
+createUriRegex()#test(uri)                              x 1,366,824 ops/sec ±0.44% (99 runs sampled)
+createUriRegex({ scheme: 'http' })#test(uri)            x 6,217,254 ops/sec ±1.00% (95 runs sampled)
+createUriRegex({ scheme: ['http', 'https'] })#test(uri) x 5,893,218 ops/sec ±3.81% (86 runs sampled)
+createUriRegex({ scheme: /https?/ })#test(uri)          x 4,361,711 ops/sec ±0.83% (93 runs sampled)
+Testing URI "http://asdf:qw%20er@[a:b:c:d:e::1.2.3.4]:8000"
+4 tests completed.
+createUriRegex()#test(uri)                              x 1,267,517 ops/sec ±1.32% (94 runs sampled)
+createUriRegex({ scheme: 'http' })#test(uri)            x 5,305,528 ops/sec ±4.39% (82 runs sampled)
+createUriRegex({ scheme: ['http', 'https'] })#test(uri) x 4,422,018 ops/sec ±0.99% (91 runs sampled)
+createUriRegex({ scheme: /https?/ })#test(uri)          x 4,311,991 ops/sec ±0.98% (94 runs sampled)
+Testing URI "http://asdf:qw%20er@[a:b:c:d:e::1.2.3.4]:8000/"
+4 tests completed.
+createUriRegex()#test(uri)                              x 1,265,028 ops/sec ±0.67% (95 runs sampled)
+createUriRegex({ scheme: 'http' })#test(uri)            x 6,531,244 ops/sec ±0.86% (93 runs sampled)
+createUriRegex({ scheme: ['http', 'https'] })#test(uri) x 6,207,875 ops/sec ±1.15% (95 runs sampled)
+createUriRegex({ scheme: /https?/ })#test(uri)          x 4,590,291 ops/sec ±3.61% (68 runs sampled)
+Testing URI "http://asdf:qw%20er@[a:b:c:d:e::1.2.3.4]:8000/path/one/two/three/four"
+4 tests completed.
+createUriRegex()#test(uri)                              x 1,146,884 ops/sec ±1.38% (95 runs sampled)
+createUriRegex({ scheme: 'http' })#test(uri)            x 6,184,176 ops/sec ±0.92% (95 runs sampled)
+createUriRegex({ scheme: ['http', 'https'] })#test(uri) x 4,302,729 ops/sec ±4.48% (60 runs sampled)
+createUriRegex({ scheme: /https?/ })#test(uri)          x 4,321,373 ops/sec ±1.33% (91 runs sampled)
+Testing URI "http://asdf:qw%20er@[a:b:c:d:e::1.2.3.4]:8000/path/one/two/three/four?asdf=12345&asda=fc%2F"
+4 tests completed.
+createUriRegex()#test(uri)                              x 1,041,647 ops/sec ±2.26% (93 runs sampled)
+createUriRegex({ scheme: 'http' })#test(uri)            x 4,545,700 ops/sec ±3.40% (70 runs sampled)
+createUriRegex({ scheme: ['http', 'https'] })#test(uri) x 4,628,405 ops/sec ±1.08% (98 runs sampled)
+createUriRegex({ scheme: /https?/ })#test(uri)          x 4,736,866 ops/sec ±0.29% (102 runs sampled)
+Testing URI "http://asdf:qw%20er@[a:b:c:d:e::1.2.3.4]:8000/path/one/two/three/four?asdf=12345&asda=fc%2F#bacon"
+4 tests completed.
+createUriRegex()#test(uri)                              x 1,118,837 ops/sec ±0.52% (100 runs sampled)
+createUriRegex({ scheme: 'http' })#test(uri)            x 6,670,574 ops/sec ±0.88% (97 runs sampled)
+createUriRegex({ scheme: ['http', 'https'] })#test(uri) x 5,698,370 ops/sec ±4.06% (83 runs sampled)
+createUriRegex({ scheme: /https?/ })#test(uri)          x 4,644,305 ops/sec ±0.33% (100 runs sampled)
+Testing URI "http://[v1.09azAZ-._~!$&'()*+,;=:]/"
+4 tests completed.
+createUriRegex()#test(uri)                              x 1,927,848 ops/sec ±0.35% (97 runs sampled)
+createUriRegex({ scheme: 'http' })#test(uri)            x 5,206,235 ops/sec ±3.91% (77 runs sampled)
+createUriRegex({ scheme: ['http', 'https'] })#test(uri) x 4,540,271 ops/sec ±1.44% (95 runs sampled)
+createUriRegex({ scheme: /https?/ })#test(uri)          x 4,467,352 ops/sec ±0.92% (97 runs sampled)
+Testing URI "http://asdf:qw%20er@[v1.09azAZ-._~!$&'()*+,;=:]"
+4 tests completed.
+createUriRegex()#test(uri)                              x 1,771,271 ops/sec ±0.72% (95 runs sampled)
+createUriRegex({ scheme: 'http' })#test(uri)            x 6,567,964 ops/sec ±0.81% (95 runs sampled)
+createUriRegex({ scheme: ['http', 'https'] })#test(uri) x 6,041,393 ops/sec ±3.84% (87 runs sampled)
+createUriRegex({ scheme: /https?/ })#test(uri)          x 4,495,271 ops/sec ±0.94% (94 runs sampled)
+Testing URI "http://asdf:qw%20er@[v1.09azAZ-._~!$&'()*+,;=:]:8000"
+4 tests completed.
+createUriRegex()#test(uri)                              x 1,658,765 ops/sec ±0.91% (93 runs sampled)
+createUriRegex({ scheme: 'http' })#test(uri)            x 5,543,693 ops/sec ±3.96% (81 runs sampled)
+createUriRegex({ scheme: ['http', 'https'] })#test(uri) x 4,609,185 ops/sec ±0.75% (99 runs sampled)
+createUriRegex({ scheme: /https?/ })#test(uri)          x 4,442,419 ops/sec ±1.25% (97 runs sampled)
+Testing URI "http://asdf:qw%20er@[v1.09azAZ-._~!$&'()*+,;=:]:8000/"
+4 tests completed.
+createUriRegex()#test(uri)                              x 1,535,690 ops/sec ±2.02% (89 runs sampled)
+createUriRegex({ scheme: 'http' })#test(uri)            x 6,333,725 ops/sec ±0.98% (91 runs sampled)
+createUriRegex({ scheme: ['http', 'https'] })#test(uri) x 6,304,871 ops/sec ±0.91% (93 runs sampled)
+createUriRegex({ scheme: /https?/ })#test(uri)          x 4,307,975 ops/sec ±1.56% (74 runs sampled)
+Testing URI "http://asdf:qw%20er@[v1.09azAZ-._~!$&'()*+,;=:]:8000/path/one/two/three/four"
+4 tests completed.
+createUriRegex()#test(uri)                              x 1,414,925 ops/sec ±1.08% (92 runs sampled)
+createUriRegex({ scheme: 'http' })#test(uri)            x 6,127,048 ops/sec ±1.16% (88 runs sampled)
+createUriRegex({ scheme: ['http', 'https'] })#test(uri) x 4,120,578 ops/sec ±0.67% (95 runs sampled)
+createUriRegex({ scheme: /https?/ })#test(uri)          x 4,353,383 ops/sec ±1.04% (90 runs sampled)
+Testing URI "http://asdf:qw%20er@[v1.09azAZ-._~!$&'()*+,;=:]:8000/path/one/two/three/four?asdf=12345&asda=fc%2F"
+4 tests completed.
+createUriRegex()#test(uri)                              x 1,354,076 ops/sec ±1.05% (95 runs sampled)
+createUriRegex({ scheme: 'http' })#test(uri)            x 4,508,082 ops/sec ±1.83% (71 runs sampled)
+createUriRegex({ scheme: ['http', 'https'] })#test(uri) x 4,225,285 ops/sec ±0.75% (91 runs sampled)
+createUriRegex({ scheme: /https?/ })#test(uri)          x 4,363,146 ops/sec ±0.91% (93 runs sampled)
+Testing URI "http://asdf:qw%20er@[v1.09azAZ-._~!$&'()*+,;=:]:8000/path/one/two/three/four?asdf=12345&asda=fc%2F#bacon"
+4 tests completed.
+createUriRegex()#test(uri)                              x 1,296,865 ops/sec ±1.84% (87 runs sampled)
+createUriRegex({ scheme: 'http' })#test(uri)            x 6,523,095 ops/sec ±1.18% (93 runs sampled)
+createUriRegex({ scheme: ['http', 'https'] })#test(uri) x 5,383,548 ops/sec ±3.22% (81 runs sampled)
+createUriRegex({ scheme: /https?/ })#test(uri)          x 4,370,670 ops/sec ±0.88% (91 runs sampled)
