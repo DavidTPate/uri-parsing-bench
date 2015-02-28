@@ -1,0 +1,27 @@
+{
+  "name": "uri-parsing-bench",
+  "version": "1.0.0",
+  "description": "Javascript URI Parsing Benchmarks for https://github.com/hapijs/joi/pull/457",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DavidTPate/uri-parsing-bench.git"
+  },
+  "author": {
+    "name": "David Pate",
+    "email": "me@davidtpate.com",
+    "url": "http://davidtpate.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DavidTPate/uri-parsing-bench/issues"
+  },
+  "homepage": "https://github.com/DavidTPate/uri-parsing-bench",
+  "dependencies": {
+    "benchmark": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "bench": "node bench/index.js"
+  }
+}
